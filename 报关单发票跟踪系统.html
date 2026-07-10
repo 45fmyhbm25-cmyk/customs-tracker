@@ -36,34 +36,40 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Micr
 .header h1 .icon{width:32px;height:32px;background:var(--primary);border-radius:8px;display:flex;align-items:center;justify-content:center;color:#fff;font-size:18px}
 .header-actions{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
 .header-info{font-size:13px;color:var(--gray-500)}
+
 .upload-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:24px}
 @media(max-width:820px){.upload-grid{grid-template-columns:1fr}}
 .card{background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);border:1px solid var(--gray-200);overflow:hidden}
 .card-header{display:flex;align-items:center;gap:8px;padding:16px 20px 12px;font-weight:600;font-size:15px;color:var(--gray-800);border-bottom:1px solid var(--gray-100)}
 .card-header .badge{font-size:11px;font-weight:500;padding:2px 8px;border-radius:12px;margin-left:auto}
 .card-body{padding:16px 20px 20px}
+
 .upload-zone{position:relative;border:2px dashed var(--gray-300);border-radius:8px;padding:32px 20px;text-align:center;cursor:pointer;transition:all .2s;background:var(--gray-50)}
 .upload-zone:hover,.upload-zone.dragover{border-color:var(--primary-light);background:var(--primary-bg)}
 .upload-zone .icon{font-size:36px;margin-bottom:8px;display:block}
 .upload-zone .text{font-size:14px;color:var(--gray-600)}
 .upload-zone .hint{font-size:12px;color:var(--gray-400);margin-top:4px}
 .upload-zone input[type=file]{position:absolute;inset:0;opacity:0;cursor:pointer}
+
 .recog-list{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px;min-height:28px}
 .recog-tag{display:inline-flex;align-items:center;gap:4px;background:var(--primary-bg);color:var(--primary);font-size:12px;padding:4px 10px;border-radius:6px;font-family:"SFMono-Regular",Consolas,"Liberation Mono",Menlo,monospace;letter-spacing:0.5px}
 .recog-tag .status-dot{width:7px;height:7px;border-radius:50%;display:inline-block}
 .recog-tag .status-dot.pending{background:var(--warning)}
 .recog-tag .status-dot.invoiced{background:var(--success)}
+
 .import-summary{margin-top:12px;font-size:13px;color:var(--gray-600)}
 .import-summary .stat{display:inline-flex;align-items:center;gap:6px;margin-right:16px}
 .import-summary .num{font-weight:700;color:var(--gray-800)}
 .import-summary .num.match{color:var(--success)}
 .import-summary .num.new{color:var(--primary)}
 .import-summary .num.skip{color:var(--gray-400)}
+
 .toolbar{display:flex;align-items:center;justify-content:space-between;padding:14px 20px;background:#fff;border-bottom:1px solid var(--gray-200);flex-wrap:wrap;gap:10px}
 .toolbar-left{display:flex;align-items:center;gap:12px}
 .toolbar-left .count{font-size:14px;color:var(--gray-600)}
 .toolbar-left .count strong{color:var(--gray-800)}
 .toolbar-right{display:flex;gap:8px;flex-wrap:wrap}
+
 .btn{display:inline-flex;align-items:center;gap:6px;padding:7px 16px;border-radius:6px;font-size:13px;font-weight:500;border:1px solid transparent;cursor:pointer;transition:all .15s;white-space:nowrap}
 .btn:disabled{opacity:.5;cursor:not-allowed}
 .btn-primary{background:var(--primary);color:#fff;border-color:var(--primary)}
@@ -73,6 +79,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Micr
 .btn-danger{background:#fff;color:var(--danger);border-color:var(--danger)}
 .btn-danger:hover:not(:disabled){background:#fef2f2}
 .btn-sm{padding:4px 10px;font-size:12px}
+
 .table-wrapper{overflow-x:auto}
 table{width:100%;border-collapse:collapse;font-size:13px}
 thead{background:var(--gray-50)}
@@ -82,10 +89,12 @@ th.sorted .sort-arrow{opacity:1;color:var(--primary)}
 td{padding:10px 12px;border-bottom:1px solid var(--gray-100);vertical-align:middle}
 tr:hover td{background:var(--gray-50)}
 tr.empty td{padding:40px 12px;text-align:center;color:var(--gray-400);font-size:14px}
+
 .source-badge{display:inline-block;font-size:11px;padding:2px 7px;border-radius:4px;font-weight:500}
 .source-badge.pdf{background:#eef2ff;color:#4338ca}
 .source-badge.excel{background:#f0fdf4;color:#16a34a}
 .source-badge.manual{background:#fef3c7;color:#b45309}
+
 .status-badge{display:inline-flex;align-items:center;gap:5px;padding:3px 10px;border-radius:12px;font-size:12px;font-weight:500}
 .status-badge.pending{background:var(--warning-bg);color:var(--warning)}
 .status-badge.invoiced{background:var(--success-bg);color:var(--success)}
@@ -94,11 +103,13 @@ tr.empty td{padding:40px 12px;text-align:center;color:var(--gray-400);font-size:
 .status-badge.pending .dot{background:var(--warning)}
 .status-badge.invoiced .dot{background:var(--success)}
 .status-badge.no-customs .dot{background:var(--gray-400)}
+
 .customs-cell{font-family:"SFMono-Regular",Consolas,"Liberation Mono",Menlo,monospace;font-size:12px;letter-spacing:0.3px;color:var(--gray-700)}
 td.editable{cursor:pointer;position:relative}
 td.editable:hover{background:var(--primary-bg)}
 td.editable:hover .edit-hint{display:inline}
 td .edit-hint{display:none;position:absolute;right:6px;top:50%;transform:translateY(-50%);font-size:10px;color:var(--gray-400)}
+
 .modal-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.4);z-index:1000;align-items:center;justify-content:center;padding:20px}
 .modal-overlay.active{display:flex}
 .modal{background:#fff;border-radius:12px;box-shadow:0 25px 50px -12px rgba(0,0,0,.25);width:100%;max-width:600px;max-height:90vh;overflow-y:auto;animation:modalIn .2s ease}
@@ -117,6 +128,7 @@ td .edit-hint{display:none;position:absolute;right:6px;top:50%;transform:transla
 .form-group input:disabled{background:var(--gray-50);color:var(--gray-500)}
 .form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
 @media(max-width:500px){.form-row{grid-template-columns:1fr}}
+
 .toast-container{position:fixed;top:20px;right:20px;z-index:2000;display:flex;flex-direction:column;gap:8px;pointer-events:none}
 .toast{display:flex;align-items:center;gap:10px;padding:12px 20px;border-radius:8px;box-shadow:var(--shadow-md);font-size:14px;animation:slideIn .3s ease;pointer-events:auto;max-width:420px}
 .toast.success{background:#f0fdf4;color:#166534;border:1px solid #bbf7d0}
@@ -124,6 +136,7 @@ td .edit-hint{display:none;position:absolute;right:6px;top:50%;transform:transla
 .toast.info{background:var(--primary-bg);color:#1e40af;border:1px solid #bfdbfe}
 .toast.warning{background:var(--warning-bg);color:#92400e;border:1px solid #fde68a}
 @keyframes slideIn{from{opacity:0;transform:translateX(40px)}to{opacity:1;transform:translateX(0)}}
+
 .stats-bar{display:flex;gap:24px;padding:14px 20px;background:var(--gray-50);border-top:1px solid var(--gray-200);flex-wrap:wrap;font-size:13px}
 .stats-bar .stat-item{display:flex;align-items:center;gap:6px}
 .stats-bar .stat-value{font-weight:700;font-size:15px}
@@ -132,10 +145,12 @@ td .edit-hint{display:none;position:absolute;right:6px;top:50%;transform:transla
 .stats-bar .stat-value.warning{color:var(--warning)}
 .stats-bar .stat-value.gray{color:var(--gray-500)}
 .stats-bar .stat-label{color:var(--gray-500)}
+
 .spinner{display:inline-block;width:16px;height:16px;border:2px solid var(--gray-300);border-top-color:var(--primary);border-radius:50%;animation:spin .6s linear}
 @keyframes spin{to{transform:rotate(360deg)}}
 .loading-overlay{display:none;align-items:center;justify-content:center;gap:8px;padding:12px;color:var(--gray-500);font-size:13px}
 .loading-overlay.active{display:flex}
+
 .footer{text-align:center;padding:24px 0 8px;font-size:12px;color:var(--gray-400)}
 </style>
 </head>
@@ -200,9 +215,7 @@ td .edit-hint{display:none;position:absolute;right:6px;top:50%;transform:transla
         <span class="count" style="font-size:12px;color:var(--gray-400)" id="noticeLine"></span>
       </div>
       <div class="toolbar-right">
-        <button class="btn btn-outline btn-sm" onclick="exportExcel()" id="exportBtn" disabled>
-          ⬇ 批量导出 Excel
-        </button>
+        <button class="btn btn-outline btn-sm" onclick="exportExcel()" id="exportBtn" disabled>⬇ 导出 Excel</button>
         <button class="btn btn-primary btn-sm" onclick="openAddModal()">＋ 手动添加</button>
       </div>
     </div>
@@ -223,12 +236,12 @@ td .edit-hint{display:none;position:absolute;right:6px;top:50%;transform:transla
           </tr>
         </thead>
         <tbody id="tableBody">
-          <tr class="empty"><td colspan="9">暂无数据，请上传报关单 PDF 或导入 Excel</td></tr>
+          <tr class="empty"><td colspan="9">暂无数据</td></tr>
         </tbody>
       </table>
     </div>
 
-    <div class="stats-bar" id="statsBar">
+    <div class="stats-bar">
       <div class="stat-item"><span class="stat-value primary" id="statTotal">0</span><span class="stat-label">总计</span></div>
       <div class="stat-item"><span class="stat-value warning" id="statPending">0</span><span class="stat-label">待开票</span></div>
       <div class="stat-item"><span class="stat-value success" id="statInvoiced">0</span><span class="stat-label">已开票</span></div>
@@ -236,7 +249,7 @@ td .edit-hint{display:none;position:absolute;right:6px;top:50%;transform:transla
     </div>
   </div>
 
-  <div class="footer">报关单发票跟踪系统 · 数据自动保存在本地浏览器</div>
+  <div class="footer">报关单发票跟踪系统 · 数据保存在浏览器本地</div>
 </div>
 
 <div class="modal-overlay" id="editModal">
@@ -249,7 +262,7 @@ td .edit-hint{display:none;position:absolute;right:6px;top:50%;transform:transla
       <div class="form-group">
         <label>海关编号（18位）</label>
         <input type="text" id="f_customsNo" disabled>
-        <div class="form-hint">从报关单PDF自动识别，不可修改</div>
+        <div class="form-hint">从报关单PDF自动识别</div>
       </div>
       <div class="form-row">
         <div class="form-group">
@@ -281,218 +294,125 @@ td .edit-hint{display:none;position:absolute;right:6px;top:50%;transform:transla
 
 <script>
 // ======================================================================
-// 报关单发票跟踪系统
-// 完全自包含 — 无需外部 CDN 加载 PDF.js / XLSX 库
-// 包括内置的 PDF 文本提取器和 XLSX(ZIP) 解析器
+// 报关单发票跟踪系统 v5
+// 策略：在线时使用 CDN 库（SheetJS + PDF.js），离线时用内置轻量解析
 // ======================================================================
 
-var STORAGE_KEY = 'customs_invoice_data_v4';
+var STORAGE_KEY = 'customs_invoice_data_v5';
 var records = [];
 var editingId = null;
 var sortField = 'customsNo';
 var sortDir = 'asc';
 
-// ======================================================================
-// PDF 海关编号提取（无需 PDF.js / 外部库）
-// 策略：
-//   1. 将 PDF 作为文本读取（可获取非压缩区的明文）
-//   2. 搜索 "海关编号" + 18位数字
-//   3. 搜索 "预录入编号" + 18位数字（报关单上这两个号码通常相同）
-//   4. 在原始二进制中搜索 Tj/TJ 操作符文本
-//   5. 搜索含 "报关单" 上下文的 18位数字
-//   6. 兜底搜索任意 18位数字（但严格校验，排除全相同数字等无效值）
-// ======================================================================
+// 所有历史 storage key（迁移旧数据）
+var STORAGE_KEYS = [STORAGE_KEY, 'customs_invoice_data_v4', 'customs_invoice_data_v3', 'customs_invoice_data_v2', 'customs_invoice_data'];
 
-// 验证 18 位数字是否"像"真实海关编号
+// ======================================================================
+// 通用的 18 位海关编号校验（防误识别）
+// ======================================================================
 function isValidCustomsNo(s) {
-  if (!s || s.length !== 18) return false;
-  if (!/^\d{18}$/.test(s)) return false;
-  // 排除全部相同数字（如 999999999999999999）
-  var first = s.charAt(0);
-  var allSame = true;
+  if (!s || s.length !== 18 || !/^\d{18}$/.test(s)) return false;
+  var first = s.charAt(0), allSame = true;
   for (var i = 1; i < 18; i++) { if (s.charAt(i) !== first) { allSame = false; break; } }
   if (allSame) return false;
-  // 排除连续递进数字（如 123456789012345678）
-  var ascending = true, descending = true;
-  for (var i = 1; i < 18; i++) {
-    var cur = parseInt(s.charAt(i), 10);
-    var prev = parseInt(s.charAt(i-1), 10);
-    if (cur !== (prev + 1) % 10) ascending = false;
-    if (cur !== (prev - 1 + 10) % 10) descending = false;
-  }
-  if (ascending || descending) return false;
-  // 排除纯时间戳格式（如前8位是日期，后6位是时间等明显模式）
-  // 海关编号通常以 4 位关区代码开头（如 5316、5304 等）
   return true;
 }
 
-// 在文本中智能提取海关编号
-function smartExtractCN(text) {
-  if (!text || text.length < 20) return null;
-
-  // 1. 优先找"海关编号" + 18位数字
-  var m1 = text.match(/海关编号[：:]\s*(\d{18})/);
-  if (m1 && isValidCustomsNo(m1[1])) return m1[1];
-
-  // 2. 找"预录入编号"附近 + 18位数字
-  var m2 = text.match(/预录入编号[：:]\s*(\d{18})/);
-  if (m2 && isValidCustomsNo(m2[1])) return m2[1];
-
-  // 3. 找"备案号"或"报关单"附近的 18位数字
-  var contextMatches = text.match(/(?:报关单|备案号|海关编号)[^0-9]*(\d{18})/);
-  if (contextMatches && isValidCustomsNo(contextMatches[1])) return contextMatches[1];
-
-  // 4. 找"仅供核对用"附近的 18位数字（报关单常用标记）
-  var m4 = text.match(/仅供核对[^0-9]*(\d{18})/);
-  if (m4 && isValidCustomsNo(m4[1])) return m4[1];
-
-  // 5. 找所有 18 位数字，返回第一个合理值
-  var all18 = text.match(/\b\d{18}\b/g);
-  if (all18) {
-    // 先找以常见关区代码开头的（5316,5304,5352,5318,5301等）
-    for (var i = 0; i < all18.length; i++) {
-      if (all18[i].length === 18 && isValidCustomsNo(all18[i])) return all18[i];
-    }
-  }
-
-  // 6. 宽松模式：不带单词边界的18位数字
-  var m6 = text.match(/(?<!\d)(\d{18})(?!\d)/);
-  // 实际上 \b 边界在中文环境下不可靠，这里用 (?!\d) 保证前面也不是数字
-  // 但 JS 不支持 lookbehind，所以我们用另一种方式
-  // 扫描所有18位连续数字
-  var idx = 0;
-  while (idx < text.length) {
-    var m = text.substr(idx).match(/(\d{18})/);
-    if (!m) break;
-    var pos = text.indexOf(m[1], idx);
-    // 检查前后字符
-    var before = text.charCodeAt(pos - 1) || 32;
-    var after = text.charCodeAt(pos + 18) || 32;
-    // 前/后不是数字（确保不是更长数字的一部分）
-    if ((before < 48 || before > 57) && (after < 48 || after > 57)) {
-      if (isValidCustomsNo(m[1])) return m[1];
-    }
-    idx = pos + 1;
-  }
-
+function extractCNfromText(text) {
+  if (!text) return null;
+  // 1) 海关编号：
+  var m = text.match(/海关编号[：:]\s*(\d{18})/);
+  if (m && isValidCustomsNo(m[1])) return m[1];
+  // 2) 预录入编号：（通常与海关编号相同）
+  m = text.match(/预录入编号[：:]\s*(\d{18})/);
+  if (m && isValidCustomsNo(m[1])) return m[1];
+  // 3) "报关单号"附近
+  m = text.match(/报关单[号]?[^0-9]*(\d{18})/);
+  if (m && isValidCustomsNo(m[1])) return m[1];
+  // 4) 仅供核对用 附近
+  m = text.match(/仅供核对[^0-9]*(\d{18})/);
+  if (m && isValidCustomsNo(m[1])) return m[1];
+  // 5) 任意 18 位数字（有单词边界）
+  var all = text.match(/\b(\d{18})\b/g);
+  if (all) { for (var i = 0; i < all.length; i++) { if (isValidCustomsNo(all[i])) return all[i]; } }
   return null;
 }
 
-// 从原始 PDF 二进制中提取 Tj/TJ 文本
-function extractPDFTextFromBinary(arrayBuffer) {
-  var bytes = new Uint8Array(arrayBuffer);
-  // 转成 Latin-1 字符串（每个字节对应一个字符，保留原始字节值）
-  var raw = '';
-  for (var i = 0; i < bytes.length; i++) {
-    raw += String.fromCharCode(bytes[i]);
-  }
+// ======================================================================
+// PDF 解析
+// 在线时用 PDF.js（更准确），离线时用内置提取
+// ======================================================================
+var pdfjsLib = null;
 
-  var texts = [];
-
-  // 提取 Tj 操作符前的文本: (text) Tj
-  var reTj = /\(([^)]*)\)\s*Tj/g;
-  var m;
-  while ((m = reTj.exec(raw)) !== null) {
-    var decoded = m[1].replace(/\\n/g,'\n').replace(/\\r/g,'\r').replace(/\\t/g,'\t')
-                      .replace(/\\([0-7]{3})/g, function(_, o) { return String.fromCharCode(parseInt(o,8)); })
-                      .replace(/\\(.)/g, '$1');
-    texts.push(decoded);
-  }
-
-  // 提取 TJ 数组: [(text) num (text)] TJ
-  var reTJ = /\[([^\]]*)\]\s*TJ/g;
-  while ((m = reTJ.exec(raw)) !== null) {
-    var inner = m[1];
-    var re3 = /\(([^)]*)\)/g;
-    var m2;
-    while ((m2 = re3.exec(inner)) !== null) {
-      var decoded2 = m2[1].replace(/\\n/g,'\n').replace(/\\r/g,'\r').replace(/\\t/g,'\t')
-                          .replace(/\\([0-7]{3})/g, function(_, o) { return String.fromCharCode(parseInt(o,8)); })
-                          .replace(/\\(.)/g, '$1');
-      texts.push(decoded2);
-    }
-  }
-
-  return texts.join(' ');
+function loadPDFjs(callback) {
+  if (pdfjsLib) { callback(true); return; }
+  var s = document.createElement('script');
+  s.src = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js';
+  s.onload = function() {
+    pdfjsLib = window.pdfjsLib;
+    pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+    callback(true);
+  };
+  s.onerror = function() { callback(false); };
+  document.head.appendChild(s);
 }
 
-// 主入口：从 PDF 文件提取海关编号
+// 内置 PDF 文本提取（当在线 pdf.js 不可用时）
+function builtinPDFText(arrayBuffer) {
+  var bytes = new Uint8Array(arrayBuffer);
+  var raw = '';
+  for (var i = 0; i < bytes.length; i++) raw += String.fromCharCode(bytes[i]);
+
+  var texts = [];
+  // Tj 操作符
+  var re = /\(([^)]*)\)\s*Tj/g, m;
+  while ((m = re.exec(raw)) !== null) texts.push(m[1].replace(/\\(.)/g, '$1'));
+  // TJ 操作符
+  var re2 = /\[([^\]]*)\]\s*TJ/g;
+  while ((m = re2.exec(raw)) !== null) {
+    var re3 = /\(([^)]*)\)/g, m2;
+    while ((m2 = re3.exec(m[1])) !== null) texts.push(m2[1].replace(/\\(.)/g, '$1'));
+  }
+
+  var combined = texts.join(' ');
+  // 如果 Tj/TJ 没提取到内容，用 TextDecoder 读 UTF-8
+  if (combined.length < 10 && typeof TextDecoder !== 'undefined') {
+    try {
+      combined = new TextDecoder('utf-8', { fatal: false }).decode(bytes.slice(0, Math.min(bytes.length, 200000)));
+    } catch(e) {}
+  }
+  return combined;
+}
+
 function processPDF(file) {
-  return new Promise(function(resolve, reject) {
+  return new Promise(function(resolve) {
+    // 先尝试用 PDF.js（在线模式）
+    if (window.pdfjsLib && window.pdfjsLib.getDocument) {
+      file.arrayBuffer().then(function(buf) {
+        window.pdfjsLib.getDocument({ data: buf }).promise.then(function(pdf) {
+          var textPromises = [];
+          for (var i = 1; i <= pdf.numPages; i++) {
+            textPromises.push(pdf.getPage(i).then(function(page) {
+              return page.getTextContent().then(function(tc) {
+                return tc.items.map(function(item) { return item.str; }).join(' ');
+              });
+            }));
+          }
+          Promise.all(textPromises).then(function(pages) {
+            resolve(extractCNfromText(pages.join('\n')));
+          }).catch(function() { resolve(null); });
+        }).catch(function() { resolve(null); });
+      }).catch(function() { resolve(null); });
+      return;
+    }
+
+    // 离线模式：内置提取
     var reader = new FileReader();
     reader.onload = function(e) {
       try {
-        var arrayBuffer = e.target.result;
-        var bytes = new Uint8Array(arrayBuffer);
-        var raw = '';
-        for (var i = 0; i < bytes.length; i++) {
-          raw += String.fromCharCode(bytes[i]);
-        }
-
-        var cn = null;
-
-        // ---- 方法1: 在原始字节中直接搜索"海关编号"附近文本 ----
-        // 即使内容流被压缩，PDF 结构体的某些部分仍可能是明文
-        var ctx = raw.match(/海关编号[^0-9]*(\d{18})/);
-        if (ctx && isValidCustomsNo(ctx[1])) cn = ctx[1];
-
-        // ---- 方法2: 搜索 Tj/TJ 操作符提取的文本 ----
-        if (!cn) {
-          var texts = [];
-          var reTj = /\(([^)]*)\)\s*Tj/g;
-          var m;
-          while ((m = reTj.exec(raw)) !== null) {
-            texts.push(m[1].replace(/\\n/g,'\n').replace(/\\r/g,'\r').replace(/\\t/g,'\t')
-                          .replace(/\\([0-7]{3})/g, function(_, o) { return String.fromCharCode(parseInt(o,8)); })
-                          .replace(/\\(.)/g, '$1'));
-          }
-          var reTJ = /\[([^\]]*)\]\s*TJ/g;
-          while ((m = reTJ.exec(raw)) !== null) {
-            var re3 = /\(([^)]*)\)/g;
-            var m2;
-            while ((m2 = re3.exec(m[1])) !== null) {
-              texts.push(m2[1].replace(/\\n/g,'\n').replace(/\\r/g,'\r').replace(/\\t/g,'\t')
-                            .replace(/\\([0-7]{3})/g, function(_, o) { return String.fromCharCode(parseInt(o,8)); })
-                            .replace(/\\(.)/g, '$1'));
-            }
-          }
-          if (texts.length > 0) {
-            cn = smartExtractCN(texts.join(' '));
-          }
-        }
-
-        // ---- 方法3: 用 TextDecoder 尝试解码为 UTF-8 文本 ----
-        // 可以读取 PDF 元数据和部分非压缩内容
-        if (!cn && typeof TextDecoder !== 'undefined') {
-          try {
-            var decoder = new TextDecoder('utf-8', { fatal: false });
-            var utfText = decoder.decode(bytes.slice(0, Math.min(bytes.length, 500000)));
-            cn = smartExtractCN(utfText);
-          } catch(e) { /* ignore */ }
-        }
-
-        // ---- 方法4: 在原始数据中搜索任意 18 位数字（严格校验） ----
-        if (!cn) {
-          var idx = 0;
-          while (idx < raw.length) {
-            var m = raw.substr(idx).match(/(\d{18})/);
-            if (!m) break;
-            var pos = raw.indexOf(m[1], idx);
-            var before = raw.charCodeAt(pos - 1) || 32;
-            var after = raw.charCodeAt(pos + 18) || 32;
-            if ((before < 48 || before > 57) && (after < 48 || after > 57)) {
-              if (isValidCustomsNo(m[1])) { cn = m[1]; break; }
-            }
-            idx = pos + 1;
-          }
-        }
-
-        resolve(cn);
-
-      } catch(err) {
-        // 任何解析失败都返回 null，不抛异常
-        resolve(null);
-      }
+        var text = builtinPDFText(e.target.result);
+        resolve(extractCNfromText(text));
+      } catch(e) { resolve(null); }
     };
     reader.onerror = function() { resolve(null); };
     reader.readAsArrayBuffer(file);
@@ -500,217 +420,187 @@ function processPDF(file) {
 }
 
 // ======================================================================
-// 内置 ZIP/XLSX 解析器（无需 xlsx.js）
+// XLSX / CSV 解析
+// 在线时用 SheetJS 库，离线时用内置 ZIP+XML 解析
 // ======================================================================
-// ---- 最小化 Inflate (deflate 解压) ----
-(function(){
-  function BitReader(data) {
-    this.data = data; this.pos = 0; this.buf = 0; this.bits = 0;
-  }
-  BitReader.prototype.r = function(n) {
-    while (this.bits < n) { this.buf |= (this.data[this.pos]||0) << this.bits; this.pos++; this.bits += 8; }
-    var v = this.buf & ((1<<n)-1); this.buf >>>= n; this.bits -= n; return v;
+
+// 加载 SheetJS（在线模式）
+function loadSheetJS(callback) {
+  if (typeof XLSX !== 'undefined' && XLSX && XLSX.utils) { callback(true); return; }
+  var s = document.createElement('script');
+  s.src = 'https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js';
+  s.onload = function() { callback(true); };
+  s.onerror = function() { callback(false); };
+  document.head.appendChild(s);
+}
+
+// 用 SheetJS 导入（在线模式）
+function importXLSX_SheetJS(file) {
+  var reader = new FileReader();
+  reader.onload = function(e) {
+    try {
+      var wb = XLSX.read(e.target.result, { type: 'array' });
+      var ws = wb.Sheets[wb.SheetNames[0]];
+      var json = XLSX.utils.sheet_to_json(ws, { defval: '', header: 1 });
+      if (json.length < 2) { showToast('Excel 数据不足', 'error'); hideLoading('excelLoading'); return; }
+      var headers = json[0].map(function(h) { return String(h||'').trim(); });
+      var data = json.slice(1).filter(function(r) { return r.some(function(c) { return String(c||'').trim() !== ''; }); });
+      processExcelData(headers, data);
+    } catch(err) { showToast('Excel 解析失败：'+err.message, 'error'); hideLoading('excelLoading'); }
   };
-  function buildTree(lengths) {
-    var max=0; for(var i=0;i<lengths.length;i++) if(lengths[i]>max) max=lengths[i];
-    var bl=[], code=0;
-    for(var b=1;b<=max;b++){ code=(code+(bl[b-1]||0))<<1; bl[b]=code; }
-    var next=[]; for(var b=1;b<=max;b++) next[b]=bl[b];
-    var tree={};
-    for(var i=0;i<lengths.length;i++){
-      var len=lengths[i]; if(!len) continue;
-      var c=next[len]; next[len]++;
-      var node=tree;
-      for(var b=len-1;b>=0;b--){ var bit=(c>>b)&1; if(!node[bit]) node[bit]={}; node=node[bit]; }
-      node.val=i;
+  reader.onerror = function() { showToast('文件读取失败', 'error'); hideLoading('excelLoading'); };
+  reader.readAsArrayBuffer(file);
+}
+
+// 内置 ZIP/XLSX 解析（离线模式）
+function parseXLSX_Builtin(arrayBuffer) {
+  var bytes = new Uint8Array(arrayBuffer);
+  // 从 ZIP 中提取 XML 文件
+  function inflateRaw(data) {
+    // 简易 Inflate - 只处理存储和 zlib-deflate
+    var i = 0;
+    // Check for zlib header
+    if (data[0] === 0x78) i = 2;
+    var out = [], bits = 0, buf = 0;
+    function r(n) { while (bits < n) { buf |= (data[i]||0) << bits; i++; bits += 8; } var v = buf & ((1<<n)-1); buf >>>= n; bits -= n; return v; }
+    function buildTree(lengths) {
+      var max=0; for(var j=0;j<lengths.length;j++) if(lengths[j]>max) max=lengths[j];
+      var bl=[], code=0; for(var b=1;b<=max;b++){ code=(code+(bl[b-1]||0))<<1; bl[b]=code; }
+      var next=[]; for(var b=1;b<=max;b++) next[b]=bl[b];
+      var tree={};
+      for(var j=0;j<lengths.length;j++){ var len=lengths[j]; if(!len) continue; var c=next[len]; next[len]++; var node=tree; for(var b=len-1;b>=0;b--){ var bit=(c>>b)&1; if(!node[bit]) node[bit]={}; node=node[bit]; } node.val=j; }
+      return tree;
     }
-    return tree;
-  }
-  function huff(r,tree){ var node=tree; while(node.val===undefined) node=node[r.r(1)]; return node.val; }
-
-  var lb=[3,4,5,6,7,8,9,10,11,13,15,17,19,23,27,31,35,43,51,59,67,83,99,115,131,163,195,227,258];
-  var le=[0,0,0,0,0,0,0,0,1,1,1,1,2,2,2,2,3,3,3,3,4,4,4,4,5,5,5,5,0];
-  var db=[1,2,3,4,5,7,9,13,17,25,33,49,65,97,129,193,257,385,513,769,1025,1537,2049,3073,4097,6145,8193,12289,16385,24577];
-  var de=[0,0,0,0,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11,11,12,12,13,13];
-
-  var ft,fd,ftBuilt=false;
-  function buildFixed(){
-    var lc=[]; for(var i=0;i<144;i++) lc.push(8); for(;i<256;i++) lc.push(9); for(;i<280;i++) lc.push(7); for(;i<288;i++) lc.push(8);
-    ft=buildTree(lc); var dc=[]; for(var i=0;i<32;i++) dc.push(5); fd=buildTree(dc); ftBuilt=true;
-  }
-
-  function block(r,out,lt,dt){
-    while(true){
-      var s=huff(r,lt); if(s<0) return false;
-      if(s<256){ out.push(s); }
-      else if(s===256) return true;
-      else{ var idx=s-257; var len=lb[idx]+r.r(le[idx]); var ds=huff(r,dt); var dist=db[ds]+r.r(de[ds]);
-        for(var i=0;i<len;i++) out.push(out[out.length-dist]); }
-    }
-  }
-
-  function inflateRaw(data){
-    if(!ftBuilt) buildFixed();
-    var r=new BitReader(data); var out=[];
-    var final=false;
-    while(!final){
-      final=r.r(1)===1; var type=r.r(2);
-      if(type===0){
-        r.r(5); var len=r.r(8)|(r.r(8)<<8); r.r(8); r.r(8);
-        for(var i=0;i<len;i++) out.push(r.r(8));
-      } else if(type===1){ block(r,out,ft,fd); }
-      else if(type===2){
-        var hl=r.r(5)+257; var hd=r.r(5)+1; var hc=r.r(4)+4;
-        var order=[16,17,18,0,8,7,9,6,10,5,11,4,12,3,13,2,14,1,15];
-        var cl=[];
-        for(var i=0;i<hc;i++) cl[order[i]]=r.r(3);
-        var ct=buildTree(cl);
-        var al=[];
-        while(al.length<hl+hd){
-          var sym=huff(r,ct);
-          if(sym<16) al.push(sym);
-          else if(sym===16){ var rep=r.r(2)+3; var pv=al[al.length-1]||0; for(var j=0;j<rep;j++) al.push(pv); }
-          else if(sym===17){ var rep=r.r(3)+3; for(var j=0;j<rep;j++) al.push(0); }
-          else if(sym===18){ var rep=r.r(7)+11; for(var j=0;j<rep;j++) al.push(0); }
-        }
-        var lt=buildTree(al.slice(0,hl)); var dt=buildTree(al.slice(hl,hl+hd));
-        block(r,out,lt,dt);
+    function huff(tree) { var node=tree; while(node.val===undefined) node=node[r(1)]; return node.val; }
+    var lb=[3,4,5,6,7,8,9,10,11,13,15,17,19,23,27,31,35,43,51,59,67,83,99,115,131,163,195,227,258];
+    var le=[0,0,0,0,0,0,0,0,1,1,1,1,2,2,2,2,3,3,3,3,4,4,4,4,5,5,5,5,0];
+    var db=[1,2,3,4,5,7,9,13,17,25,33,49,65,97,129,193,257,385,513,769,1025,1537,2049,3073,4097,6145,8193,12289,16385,24577];
+    var de=[0,0,0,0,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11,11,12,12,13,13];
+    var ft,fd;
+    function buildFixed() { var lc=[]; for(var j=0;j<144;j++)lc.push(8);for(;j<256;j++)lc.push(9);for(;j<280;j++)lc.push(7);for(;j<288;j++)lc.push(8); ft=buildTree(lc); var dc=[];for(var j=0;j<32;j++)dc.push(5); fd=buildTree(dc); }
+    buildFixed();
+    var final = false;
+    while (!final) {
+      final = r(1) === 1; var type = r(2);
+      if (type === 0) { r(5); var len = r(8)|(r(8)<<8); r(8); r(8); for (var j=0;j<len;j++) out.push(r(8)); }
+      else {
+        var lt = type === 1 ? ft : null, dt = type === 1 ? fd : null;
+        if (type === 2) { var hl=r(5)+257, hd=r(5)+1, hc=r(4)+4; var order=[16,17,18,0,8,7,9,6,10,5,11,4,12,3,13,2,14,1,15]; var cl=[]; for(var j=0;j<hc;j++) cl[order[j]]=r(3); var ct=buildTree(cl); var al=[]; while(al.length<hl+hd){ var sym=huff(ct); if(sym<16) al.push(sym); else if(sym===16){ var rep=r(2)+3; var pv=al[al.length-1]||0; for(var j=0;j<rep;j++)al.push(pv); } else if(sym===17){ var rep=r(3)+3; for(var j=0;j<rep;j++)al.push(0); } else if(sym===18){ var rep=r(7)+11; for(var j=0;j<rep;j++)al.push(0); } } lt=buildTree(al.slice(0,hl)); dt=buildTree(al.slice(hl,hl+hd)); }
+        while (true) { var sym=huff(lt); if (sym<0) break; if (sym<256) out.push(sym); else if (sym===256) break; else { var idx=sym-257; var len=lb[idx]+r(le[idx]); var ds=huff(dt); var dist=db[ds]+r(de[ds]); for(var j=0;j<len;j++) out.push(out[out.length-dist]); } }
       }
     }
     return new Uint8Array(out);
   }
 
-  // 公开接口
-  window._inflateRaw = inflateRaw;
-})();
-
-// ---- ZIP 读取器 ----
-function readZIP(arrayBuffer) {
-  var bytes = new Uint8Array(arrayBuffer);
-  var entries = {};
-  var i = 0;
-  while (i < bytes.length - 30) {
-    if (bytes[i] !== 0x50 || bytes[i+1] !== 0x4B) { i++; continue; }
-    var sig = bytes[i+2] | (bytes[i+3] << 8);
-    if (sig === 0x0201) break; // central dir
-    if (sig !== 0x0304) { i++; continue; }
-
-    var comp = bytes[i+8] | (bytes[i+9] << 8);
-    var csize = bytes[i+18] | (bytes[i+19] << 8) | (bytes[i+20] << 16) | (bytes[i+21] << 24);
-    var usize = bytes[i+22] | (bytes[i+23] << 8) | (bytes[i+24] << 16) | (bytes[i+25] << 24);
-    var nlen = bytes[i+26] | (bytes[i+27] << 8);
-    var elen = bytes[i+28] | (bytes[i+29] << 8);
-
-    var name = '';
-    for (var k = 0; k < nlen; k++) name += String.fromCharCode(bytes[i + 30 + k]);
-    var start = i + 30 + nlen + elen;
-    var chunk = bytes.slice(start, start + csize);
-
-    if (comp === 8 && csize > 0) {
-      try { chunk = window._inflateRaw(chunk); } catch(e) { /* use as-is */ }
+  function readZIP() {
+    var entries = {}, i = 0;
+    while (i < bytes.length - 30) {
+      if (bytes[i]!==0x50 || bytes[i+1]!==0x4B) { i++; continue; }
+      var sig = bytes[i+2]|(bytes[i+3]<<8);
+      if (sig===0x0201) break;
+      if (sig!==0x0304) { i++; continue; }
+      var comp = bytes[i+8]|(bytes[i+9]<<8);
+      var csize = bytes[i+18]|(bytes[i+19]<<8)|(bytes[i+20]<<16)|(bytes[i+21]<<24);
+      var nlen = bytes[i+26]|(bytes[i+27]<<8);
+      var elen = bytes[i+28]|(bytes[i+29]<<8);
+      var name=''; for(var j=0;j<nlen;j++) name+=String.fromCharCode(bytes[i+30+j]);
+      var start=i+30+nlen+elen;
+      var chunk=bytes.slice(start,start+csize);
+      if(comp===8&&csize>0) try{chunk=inflateRaw(chunk);}catch(e){}
+      entries[name]=chunk;
+      i=start+csize;
     }
-    entries[name] = chunk;
-    i = start + csize;
+    return entries;
   }
-  return entries;
-}
 
-// ---- XLSX 解析 ----
-function bytesToString(data) {
-  var result = '';
-  for (var i = 0; i < data.length; ) {
-    var code = data[i];
-    if (code < 0x80) { result += String.fromCharCode(code); i++; }
-    else if (code < 0xE0) { result += String.fromCharCode(((code&0x1F)<<6)|(data[i+1]&0x3F)); i+=2; }
-    else if (code < 0xF0) { result += String.fromCharCode(((code&0x0F)<<12)|((data[i+1]&0x3F)<<6)|(data[i+2]&0x3F)); i+=3; }
-    else { result += String.fromCharCode(((code&0x07)<<18)|((data[i+1]&0x3F)<<12)|((data[i+2]&0x3F)<<6)|(data[i+3]&0x3F)); i+=4; }
+  function bytes2str(data) {
+    var r='',i=0;
+    while(i<data.length){ var c=data[i]; if(c<0x80){r+=String.fromCharCode(c);i++;} else if(c<0xe0){r+=String.fromCharCode(((c&0x1f)<<6)|(data[i+1]&0x3f));i+=2;} else if(c<0xf0){r+=String.fromCharCode(((c&0x0f)<<12)|((data[i+1]&0x3f)<<6)|(data[i+2]&0x3f));i+=3;} else{r+=String.fromCharCode(((c&0x07)<<18)|((data[i+1]&0x3f)<<12)|((data[i+2]&0x3f)<<6)|(data[i+3]&0x3f));i+=4;} }
+    return r;
   }
-  return result;
-}
 
-function parseXLSX(arrayBuffer) {
-  var zip = readZIP(arrayBuffer);
-  if (!zip) return null;
-
-  // shared strings
-  var sst = [];
-  var ssFile = zip['xl/sharedStrings.xml'] || zip['/xl/sharedStrings.xml'];
-  if (ssFile) {
-    var ssXml = bytesToString(ssFile);
-    var siRe = /<si\b[^>]*>([\s\S]*?)<\/si>/g;
-    var siM;
-    while ((siM = siRe.exec(ssXml)) !== null) {
-      var tRe = /<t\b[^>]*>([^<]*)<\/t>/g;
-      var parts = [], tM;
-      while ((tM = tRe.exec(siM[1])) !== null) parts.push(tM[1]);
-      sst.push(parts.join(''));
+  try {
+    var zip = readZIP();
+    // shared strings
+    var sst = [];
+    var ssFile = zip['xl/sharedStrings.xml'] || zip['/xl/sharedStrings.xml'];
+    if (ssFile) {
+      var ssXml = bytes2str(ssFile);
+      var siRe = /<si\b[^>]*>([\s\S]*?)<\/si>/g, siM;
+      while((siM=siRe.exec(ssXml))!==null){ var tRe=/<t\b[^>]*>([^<]*)<\/t>/g, parts=[], tM; while((tM=tRe.exec(siM[1]))!==null) parts.push(tM[1]); sst.push(parts.join('')); }
     }
-  }
-
-  // find sheet xml
-  var sheetXml = null;
-  var wbFile = zip['xl/workbook.xml'] || zip['/xl/workbook.xml'];
-  if (wbFile) {
-    var wbXml = bytesToString(wbFile);
-    var ridM = wbXml.match(/<sheet[^>]+r:id="([^"]+)"/);
-    if (ridM) {
-      var relsFile = zip['xl/_rels/workbook.xml.rels'] || zip['/xl/_rels/workbook.xml.rels'];
-      if (relsFile) {
-        var relsXml = bytesToString(relsFile);
-        var targetRe = new RegExp('Id="' + ridM[1] + '"[^>]*Target="([^"]+)"');
-        var tM2 = relsXml.match(targetRe);
-        if (tM2) {
-          var target = tM2[1];
-          if (!target.startsWith('/')) target = 'xl/' + target;
-          var sf = zip[target] || zip['/'+target];
-          if (sf) sheetXml = bytesToString(sf);
+    // find sheet
+    var sheetXml = null;
+    var wbFile = zip['xl/workbook.xml'] || zip['/xl/workbook.xml'];
+    if (wbFile) {
+      var wbXml = bytes2str(wbFile);
+      var ridM = wbXml.match(/<sheet[^>]+r:id="([^"]+)"/);
+      if (ridM) {
+        var relsFile = zip['xl/_rels/workbook.xml.rels'] || zip['/xl/_rels/workbook.xml.rels'];
+        if (relsFile) {
+          var relsXml = bytes2str(relsFile);
+          var targetRe = new RegExp('Id="'+ridM[1]+'"[^>]*Target="([^"]+)"');
+          var tM2 = relsXml.match(targetRe);
+          if (tM2) { var target = tM2[1]; if (!target.startsWith('/')) target='xl/'+target; var sf=zip[target]||zip['/'+target]; if(sf) sheetXml=bytes2str(sf); }
         }
       }
     }
-  }
-  if (!sheetXml) {
-    for (var key in zip) {
-      if (key.indexOf('sheet') >= 0 && key.indexOf('.xml') >= 0) {
-        sheetXml = bytesToString(zip[key]);
-        break;
-      }
-    }
-  }
-  if (!sheetXml) return null;
+    if(!sheetXml) for(var key in zip){ if(key.indexOf('sheet')>=0&&key.indexOf('.xml')>=0){ sheetXml=bytes2str(zip[key]); break; } }
+    if(!sheetXml) return null;
 
-  // parse rows
-  var rows = [];
-  var rowRe = /<row\b[^>]*>([\s\S]*?)<\/row>/g;
-  var rowM;
-  while ((rowM = rowRe.exec(sheetXml)) !== null) {
-    var cells = [];
-    var cellRe = /<c\b[^>]*>([\s\S]*?)<\/c>/g;
-    var cellM;
-    while ((cellM = cellRe.exec(rowM[1])) !== null) {
-      var ref = cellM[0].match(/r="([A-Z]+)(\d+)"/);
-      var colIdx = 0;
-      if (ref) {
-        var cs = ref[1];
-        for (var ci = 0; ci < cs.length; ci++) colIdx = colIdx * 26 + (cs.charCodeAt(ci) - 64);
-        colIdx--;
+    var rows=[], rowRe=/<row\b[^>]*>([\s\S]*?)<\/row>/g, rowM;
+    while((rowM=rowRe.exec(sheetXml))!==null){
+      var cells=[], cellRe=/<c\b[^>]*>([\s\S]*?)<\/c>/g, cellM;
+      while((cellM=cellRe.exec(rowM[1]))!==null){
+        var ref=cellM[0].match(/r="([A-Z]+)(\d+)"/), colIdx=0;
+        if(ref){ var cs=ref[1]; for(var ci=0;ci<cs.length;ci++) colIdx=colIdx*26+(cs.charCodeAt(ci)-64); colIdx--; }
+        var isS=cellM[0].indexOf('t="s"')>=0;
+        var vM=cellM[1].match(/<v>([^<]*)<\/v>/);
+        var val='';
+        if(vM){ if(isS){ var idx=parseInt(vM[1],10); val=sst[idx]!==undefined?sst[idx]:vM[1]; } else val=vM[1]; }
+        while(cells.length<colIdx) cells.push('');
+        cells[colIdx]=val;
       }
-      var isS = cellM[0].indexOf('t="s"') >= 0;
-      var vM = cellM[1].match(/<v>([^<]*)<\/v>/);
-      var val = '';
-      if (vM) {
-        if (isS) {
-          var idx = parseInt(vM[1], 10);
-          val = sst[idx] !== undefined ? sst[idx] : vM[1];
-        } else {
-          val = vM[1];
-        }
-      }
-      while (cells.length < colIdx) cells.push('');
-      cells[colIdx] = val;
+      rows.push(cells);
     }
-    rows.push(cells);
+    return rows.length>0 ? rows : null;
+  } catch(e) { return null; }
+}
+
+// 导入 Excel 入口
+function importExcel(file) {
+  showLoading('excelLoading');
+
+  // 判断 CSV — 直接处理
+  if (file.name.toLowerCase().indexOf('.csv') >= 0) {
+    var r = new FileReader();
+    r.onload = function(e) { importCSV(e.target.result); hideLoading('excelLoading'); };
+    r.onerror = function() { showToast('CSV读取失败','error'); hideLoading('excelLoading'); };
+    r.readAsText(file);
+    return;
   }
-  return rows.length > 0 ? rows : null;
+
+  // 在线模式：用 SheetJS
+  if (typeof XLSX !== 'undefined' && XLSX && XLSX.utils) {
+    importXLSX_SheetJS(file);
+    return;
+  }
+
+  // 离线模式：用内置解析器
+  var reader = new FileReader();
+  reader.onload = function(e) {
+    try {
+      var rows = parseXLSX_Builtin(new Uint8Array(e.target.result));
+      if (!rows || rows.length < 2) {
+        showToast('Excel 数据不足或格式无法识别', 'error'); hideLoading('excelLoading'); return;
+      }
+      var headers = rows[0].map(function(h) { return String(h||'').trim(); });
+      var data = rows.slice(1).filter(function(r) { return r.some(function(c) { return String(c||'').trim() !== ''; }); });
+      processExcelData(headers, data);
+    } catch(err) { showToast('导入失败：'+err.message, 'error'); hideLoading('excelLoading'); }
+  };
+  reader.onerror = function() { showToast('文件读取失败','error'); hideLoading('excelLoading'); };
+  reader.readAsArrayBuffer(file);
 }
 
 // ======================================================================
@@ -719,482 +609,353 @@ function parseXLSX(arrayBuffer) {
 function importCSV(text) {
   var lines = text.split(/\r?\n/).filter(function(l) { return l.trim(); });
   if (lines.length < 2) { showToast('CSV 数据不足', 'error'); return; }
-
-  var sep = lines[0].indexOf('\t') >= 0 ? '\t' : (lines[0].indexOf(';') >= 0 ? ';' : ',');
+  var sep = lines[0].indexOf('\t')>=0?'\t':(lines[0].indexOf(';')>=0?';':',');
   var headers = lines[0].split(sep).map(function(h) { return h.trim().replace(/^["']|["']$/g,''); });
-  var dataRows = [];
-  for (var i = 1; i < lines.length; i++) {
-    dataRows.push(lines[i].split(sep).map(function(c) { return c.trim().replace(/^["']|["']$/g,''); }));
-  }
-
-  processExcelData(headers, dataRows);
+  var data = [];
+  for (var i=1;i<lines.length;i++) data.push(lines[i].split(sep).map(function(c) { return c.trim().replace(/^["']|["']$/g,''); }));
+  processExcelData(headers, data);
 }
 
 // ======================================================================
-// 通用 Excel/CSV 数据处理
+// 通用 Excel 数据处理（行列格式）
 // ======================================================================
 function processExcelData(headers, dataRows) {
   function findCol(kws) {
-    for (var i = 0; i < headers.length; i++)
-      for (var k = 0; k < kws.length; k++)
-        if (headers[i].indexOf(kws[k]) >= 0) return i;
+    for (var i=0;i<headers.length;i++) for (var k=0;k<kws.length;k++) if (headers[i].indexOf(kws[k])>=0) return i;
     return -1;
   }
+  var ci_inv = findCol(['发票号码','数电发票','发票号']);
+  var ci_buy = findCol(['购买方','买方','客户名称']);
+  var ci_date = findCol(['开票日期','开票时间','发票日期']);
+  var ci_amt = findCol(['金额','总价','总额','总金额']);
+  var ci_rem = findCol(['备注','说明']);
+  var ci_cus = findCol(['报关单号','海关编号']);
 
-  var ci_inv = findCol(['发票号码', '数电发票', '发票号']);
-  var ci_buy = findCol(['购买方', '买方', '客户名称']);
-  var ci_date = findCol(['开票日期', '开票时间', '发票日期']);
-  var ci_amt = findCol(['金额', '总价', '总额', '总金额']);
-  var ci_rem = findCol(['备注', '说明']);
-  var ci_cus = findCol(['报关单号', '海关编号']);
-
-  if (ci_cus < 0 && dataRows.length > 0) {
-    var maxCol = dataRows[0].length;
-    // Pass 1: search for cell containing "报关单号" literally
-    for (var c = 0; c < maxCol; c++) {
-      var v = dataRows[0][c] || '';
-      if (v.indexOf('报关单号') >= 0) { ci_cus = c; break; }
-    }
-    // Pass 2: search for cell with exactly 18 digits (not part of a longer number)
-    if (ci_cus < 0) {
-      for (var c = 0; c < maxCol; c++) {
-        var v = (dataRows[0][c] || '').trim();
-        if (/^\d{18}$/.test(v)) { ci_cus = c; break; }
-      }
-    }
-    // Pass 3: search for 18-digit number within a cell (skip invoice number col)
-    if (ci_cus < 0) {
-      for (var c = 0; c < maxCol; c++) {
-        var v = dataRows[0][c] || '';
-        if (/\d{18}/.test(v) && c !== ci_inv && c !== ci_buy && c !== ci_date && c !== ci_amt) { ci_cus = c; break; }
-      }
+  // 尝试在无标题列中找报关单号
+  if (ci_cus<0 && dataRows.length>0) {
+    for (var c=0;c<dataRows[0].length;c++) {
+      var v = dataRows[0][c]||'';
+      if (v.indexOf('报关单号')>=0) { ci_cus=c; break; }
     }
   }
-  if (ci_cus < 0 && ci_rem >= 0) ci_cus = ci_rem;
-  if (ci_cus < 0) { showToast('未找到"报关单号"列', 'error'); return; }
+  if (ci_cus<0 && dataRows.length>0) {
+    for (var c=0;c<dataRows[0].length;c++) {
+      var v = (dataRows[0][c]||'').trim();
+      if (/^\d{18}$/.test(v) && c!==ci_inv) { ci_cus=c; break; }
+    }
+  }
+  if (ci_cus<0 && dataRows.length>0) {
+    for (var c=0;c<dataRows[0].length;c++) {
+      var v = dataRows[0][c]||'';
+      if (/\d{18}/.test(v) && c!==ci_inv && c!==ci_buy && c!==ci_date && c!==ci_amt) { ci_cus=c; break; }
+    }
+  }
+  if (ci_cus<0 && ci_rem>=0) ci_cus=ci_rem;
+  if (ci_cus<0) { showToast('未找到"报关单号"列','error'); return; }
 
-  function extCN(v) { var m = String(v||'').match(/(\d{18})/); return m ? m[1] : null; }
+  function extCN(v) { var m=String(v||'').match(/(\d{18})/); return m?m[1]:null; }
   function clnDate(v) {
-    var s = String(v||'').trim(); if (!s) return '';
-    var d = s.match(/^(\d{4}-\d{2}-\d{2})/); if (d) return d[1];
-    var sd = s.match(/^(\d{4})\/(\d{2})\/(\d{2})/); if (sd) return sd[1]+'-'+sd[2]+'-'+sd[3];
-    if (/^\d{4}-\d{2}-\d{2}$/.test(s)) return s;
-    var n = Number(s); if (!isNaN(n) && n > 40000 && n < 60000) return new Date((n-25569)*86400000).toISOString().slice(0,10);
+    var s=String(v||'').trim(); if(!s) return '';
+    var d=s.match(/^(\d{4}-\d{2}-\d{2})/); if(d) return d[1];
+    var sd=s.match(/^(\d{4})\/(\d{2})\/(\d{2})/); if(sd) return sd[1]+'-'+sd[2]+'-'+sd[3];
+    if(/^\d{4}-\d{2}-\d{2}$/.test(s)) return s;
+    var n=Number(s); if(!isNaN(n)&&n>40000&&n<60000) return new Date((n-25569)*86400000).toISOString().slice(0,10);
     return s;
   }
 
-  var match = 0, added = 0, skip = 0;
+  var match=0, added=0, skip=0;
+  for (var di=0;di<dataRows.length;di++) {
+    var row=dataRows[di];
+    var cn=extCN(row[ci_cus]);
+    if(!cn&&ci_rem>=0&&ci_rem!==ci_cus) cn=extCN(row[ci_rem]);
+    if(!cn) { skip++; continue; }
 
-  for (var di = 0; di < dataRows.length; di++) {
-    var row = dataRows[di];
-    var cn = extCN(row[ci_cus]);
-    if (!cn && ci_rem >= 0 && ci_rem !== ci_cus) cn = extCN(row[ci_rem]);
-    if (!cn) { skip++; continue; }
+    var inv=ci_inv>=0?String(row[ci_inv]||'').trim():'';
+    var buy=ci_buy>=0?String(row[ci_buy]||'').trim():'';
+    var date=ci_date>=0?clnDate(row[ci_date]):'';
+    var amt=ci_amt>=0?String(row[ci_amt]||'').trim():'';
 
-    var inv = ci_inv >= 0 ? String(row[ci_inv]||'').trim() : '';
-    var buy = ci_buy >= 0 ? String(row[ci_buy]||'').trim() : '';
-    var date = ci_date >= 0 ? clnDate(row[ci_date]) : '';
-    var amt = ci_amt >= 0 ? String(row[ci_amt]||'').trim() : '';
+    var exist=null;
+    for(var ri=0;ri<records.length;ri++){ if(records[ri].customsNo===cn){ exist=records[ri]; break; } }
 
-    var exist = null;
-    for (var ri = 0; ri < records.length; ri++) { if (records[ri].customsNo === cn) { exist = records[ri]; break; } }
-
-    if (exist) {
-      if (inv) exist.invoiceNo = inv;
-      if (buy) exist.buyerName = buy;
-      if (date) exist.invoiceDate = date;
-      if (amt) exist.amount = amt;
-      if (exist.status === 'no_customs') exist.status = 'invoiced';
-      exist.updatedAt = new Date().toISOString();
+    if(exist){
+      if(inv) exist.invoiceNo=inv; if(buy) exist.buyerName=buy; if(date) exist.invoiceDate=date; if(amt) exist.amount=amt;
+      exist.status='invoiced';
+      exist.updatedAt=new Date().toISOString();
       match++;
     } else {
-      records.push({ id: generateId(), customsNo: cn, invoiceNo: inv, buyerName: buy, invoiceDate: date, amount: amt,
-        hasPdf: false, status: 'no_customs', source: 'excel', createdAt: new Date().toISOString(), updatedAt: new Date().toISOString() });
+      records.push({ id:generateId(), customsNo:cn, invoiceNo:inv, buyerName:buy, invoiceDate:date, amount:amt,
+        hasPdf:false, status:'no_customs', source:'excel', createdAt:new Date().toISOString(), updatedAt:new Date().toISOString() });
       added++;
     }
   }
 
   saveData(); renderAll();
-  showToast('导入完成！匹配 ' + match + ' 条，新增 ' + added + ' 条，跳过 ' + skip + ' 条', match+added>0?'success':'info');
-  var el = document.getElementById('importSummary');
-  el.innerHTML = '<span class="stat">✅ 匹配 <span class="num match">'+match+'</span></span>' +
-    '<span class="stat">🆕 新增 <span class="num new">'+added+'</span></span>' +
+  showToast('导入完成！匹配 '+match+' 条，新增 '+added+' 条，跳过 '+skip+' 条', match+added>0?'success':'info');
+  document.getElementById('importSummary').innerHTML =
+    '<span class="stat">✅ 匹配 <span class="num match">'+match+'</span></span>'+
+    '<span class="stat">🆕 新增 <span class="num new">'+added+'</span></span>'+
     '<span class="stat">⏭ 跳过 <span class="num skip">'+skip+'</span></span>';
-  document.getElementById('importStats').textContent = (match+added) + ' 条';
+  document.getElementById('importStats').textContent=(match+added)+' 条';
+  hideLoading('excelLoading');
 }
 
 // ======================================================================
-// Excel 导入入口
-// ======================================================================
-function importExcel(file) {
-  var reader = new FileReader();
-  reader.onload = function(e) {
-    try {
-      var rows = parseXLSX(new Uint8Array(e.target.result));
-      if (!rows || rows.length < 2) {
-        showToast('Excel 数据不足或格式无法识别', 'error');
-        hideLoading('excelLoading'); return;
-      }
-      var headers = rows[0].map(function(h) { return String(h||'').trim(); });
-      var data = rows.slice(1).filter(function(r) { return r.some(function(c) { return String(c||'').trim() !== ''; }); });
-      processExcelData(headers, data);
-      hideLoading('excelLoading');
-    } catch(err) {
-      showToast('导入失败：' + err.message, 'error');
-      hideLoading('excelLoading');
-    }
-  };
-  reader.onerror = function() { showToast('文件读取失败','error'); hideLoading('excelLoading'); };
-  reader.readAsArrayBuffer(file);
-}
-
-// ======================================================================
-// 导出
+// 导出 Excel
 // ======================================================================
 function exportExcel() {
-  if (records.length === 0) { showToast('没有数据可以导出','warning'); return; }
-
-  // 尝试使用 CDN 的 XLSX 库导出 .xlsx，否则导出 CSV
-  if (typeof XLSX !== 'undefined' && XLSX && XLSX.utils) {
-    var data = records.map(function(r,i) { return {
-      '序号': i+1, '海关编号': r.customsNo, '数电发票号码': r.invoiceNo||'',
-      '购买方名称': r.buyerName||'', '开票日期': r.invoiceDate||'', '金额': r.amount||'',
-      '状态': r.status==='invoiced'?'已开票':(r.status==='no_customs'?'没有报关单':'待开票'),
-      '来源': r.source==='pdf'?'PDF导入':(r.source==='excel'?'Excel导入':'手动输入')
-    }; });
-    var wb = XLSX.utils.book_new();
-    var ws = XLSX.utils.json_to_sheet(data);
-    ws['!cols'] = [{wch:6},{wch:22},{wch:22},{wch:16},{wch:14},{wch:14},{wch:12},{wch:10}];
-    XLSX.utils.book_append_sheet(wb, ws, '报关单发票跟踪');
-    XLSX.writeFile(wb, '报关单发票跟踪_' + new Date().toISOString().slice(0,10) + '.xlsx');
-    showToast('导出成功', 'success');
-  } else {
-    exportCSV();
-  }
+  if(records.length===0){ showToast('没有数据可以导出','warning'); return; }
+  if(typeof XLSX!=='undefined'&&XLSX&&XLSX.utils){
+    var data=records.map(function(r,i){ return { '序号':i+1, '海关编号':r.customsNo, '数电发票号码':r.invoiceNo||'', '购买方名称':r.buyerName||'', '开票日期':r.invoiceDate||'', '金额':r.amount||'', '状态':r.status==='invoiced'?'已开票':(r.status==='no_customs'?'没有报关单':'待开票'), '来源':r.source==='pdf'?'PDF导入':(r.source==='excel'?'Excel导入':'手动输入') }; });
+    var wb=XLSX.utils.book_new(); var ws=XLSX.utils.json_to_sheet(data);
+    ws['!cols']=[{wch:6},{wch:22},{wch:22},{wch:16},{wch:14},{wch:14},{wch:12},{wch:10}];
+    XLSX.utils.book_append_sheet(wb,ws,'报关单发票跟踪');
+    XLSX.writeFile(wb,'报关单发票跟踪_'+new Date().toISOString().slice(0,10)+'.xlsx');
+    showToast('导出成功','success');
+  } else { exportCSV(); }
 }
 
 function exportCSV() {
-  var BOM = '﻿';
-  var lines = [['序号','海关编号','数电发票号码','购买方名称','开票日期','金额','状态','来源']];
-  records.forEach(function(r,i) {
-    lines.push([i+1, r.customsNo, r.invoiceNo||'', r.buyerName||'', r.invoiceDate||'', r.amount||'',
-      r.status==='invoiced'?'已开票':(r.status==='no_customs'?'没有报关单':'待开票'),
-      r.source==='pdf'?'PDF导入':(r.source==='excel'?'Excel导入':'手动输入')]);
-  });
-  var csv = BOM + lines.map(function(row) {
-    return row.map(function(c) {
-      var s = String(c);
-      return (s.indexOf(',')>=0||s.indexOf('"')>=0||s.indexOf('\n')>=0) ? '"'+s.replace(/"/g,'""')+'"' : s;
-    }).join(',');
-  }).join('\n');
-  var blob = new Blob([csv], {type:'text/csv;charset=utf-8;'});
-  var a = document.createElement('a');
-  a.href = URL.createObjectURL(blob);
-  a.download = '报关单发票跟踪_' + new Date().toISOString().slice(0,10) + '.csv';
-  document.body.appendChild(a); a.click(); document.body.removeChild(a);
-  URL.revokeObjectURL(a.href);
-  showToast('导出成功（CSV格式）', 'success');
+  var BOM='﻿', lines=[['序号','海关编号','数电发票号码','购买方名称','开票日期','金额','状态','来源']];
+  records.forEach(function(r,i){ lines.push([i+1,r.customsNo,r.invoiceNo||'',r.buyerName||'',r.invoiceDate||'',r.amount||'',r.status==='invoiced'?'已开票':(r.status==='no_customs'?'没有报关单':'待开票'),r.source==='pdf'?'PDF导入':(r.source==='excel'?'Excel导入':'手动输入')]); });
+  var csv=BOM+lines.map(function(r){ return r.map(function(c){ var s=String(c); return s.indexOf(',')>=0||s.indexOf('"')>=0||s.indexOf('\n')>=0?'"'+s.replace(/"/g,'""')+'"':s; }).join(','); }).join('\n');
+  var blob=new Blob([csv],{type:'text/csv;charset=utf-8;'});
+  var a=document.createElement('a'); a.href=URL.createObjectURL(blob); a.download='报关单发票跟踪_'+new Date().toISOString().slice(0,10)+'.csv';
+  document.body.appendChild(a); a.click(); document.body.removeChild(a); URL.revokeObjectURL(a.href);
+  showToast('导出成功（CSV格式）','success');
 }
 
 // ======================================================================
 // CRUD
 // ======================================================================
 function addRecord(customsNo, source) {
-  if (!source) source = 'pdf';
-  for (var i = 0; i < records.length; i++) {
-    if (records[i].customsNo === customsNo) {
-      if (records[i].source === 'excel' || records[i].status === 'no_customs') {
-        records[i].source = source;
-        records[i].hasPdf = true;
-        records[i].status = (records[i].invoiceNo && records[i].invoiceNo.trim()) ? 'invoiced' : 'pending';
-        records[i].updatedAt = new Date().toISOString();
-        saveData();
-        showToast('海关编号 ' + customsNo + ' 已匹配已有开票信息，状态已更新', 'success');
-        return true;
+  if(!source) source='pdf';
+  for(var i=0;i<records.length;i++){
+    if(records[i].customsNo===customsNo){
+      if(records[i].status==='no_customs'||records[i].source==='excel'){
+        records[i].source=source; records[i].hasPdf=true;
+        records[i].status=(records[i].invoiceNo&&records[i].invoiceNo.trim())?'invoiced':'pending';
+        records[i].updatedAt=new Date().toISOString(); saveData();
+        showToast('海关编号 '+customsNo+' 已匹配已有开票信息','success'); return true;
       }
-      showToast('海关编号 ' + customsNo + ' 已存在，跳过重复', 'warning');
-      return false;
+      showToast('海关编号 '+customsNo+' 已存在','warning'); return false;
     }
   }
-  records.push({ id: generateId(), customsNo: customsNo, invoiceNo: '', buyerName: '', invoiceDate: '', amount: '',
-    status: 'pending', source: source, hasPdf: (source==='pdf'),
-    createdAt: new Date().toISOString(), updatedAt: new Date().toISOString() });
-  saveData(); renderAll();
+  records.push({ id:generateId(), customsNo:customsNo, invoiceNo:'', buyerName:'', invoiceDate:'', amount:'', status:'pending', source:source, hasPdf:(source==='pdf'), createdAt:new Date().toISOString(), updatedAt:new Date().toISOString() });
+  saveData();
   return true;
 }
 
 function updateRecord(id, data) {
-  for (var i = 0; i < records.length; i++) {
-    if (records[i].id === id) {
-      for (var key in data) { if (data.hasOwnProperty(key)) records[i][key] = data[key]; }
-      records[i].updatedAt = new Date().toISOString();
-      records[i].status = (records[i].invoiceNo && records[i].invoiceNo.trim()) ? 'invoiced' : (records[i].hasPdf ? 'pending' : 'no_customs');
-      saveData(); return true;
-    }
-  }
+  for(var i=0;i<records.length;i++){ if(records[i].id===id){
+    for(var key in data) if(data.hasOwnProperty(key)) records[i][key]=data[key];
+    records[i].updatedAt=new Date().toISOString();
+    records[i].status=(records[i].invoiceNo&&records[i].invoiceNo.trim())?'invoiced':(records[i].hasPdf?'pending':'no_customs');
+    saveData(); return true;
+  }}
   return false;
 }
 
 function deleteRecord(id) {
-  if (!confirm('确定要删除这条记录吗？')) return;
-  records = records.filter(function(r) { return r.id !== id; });
-  saveData(); renderAll(); showToast('记录已删除', 'info');
+  if(!confirm('确定删除？')) return;
+  records=records.filter(function(r){ return r.id!==id; });
+  saveData(); renderAll(); showToast('已删除','info');
 }
 
 function clearAll() {
-  if (records.length === 0) return;
-  if (!confirm('确定要清空所有数据吗？此操作不可撤销。')) return;
-  records = []; saveData(); renderAll();
-  document.getElementById('recogList').innerHTML = '';
-  document.getElementById('importSummary').innerHTML = '';
-  document.getElementById('importStats').textContent = '未导入';
-  document.getElementById('pdfCount').textContent = '0 份';
-  showToast('所有数据已清空', 'info');
+  if(records.length===0) return;
+  if(!confirm('确定清空所有数据？此操作不可撤销。')) return;
+  records=[]; saveData(); renderAll();
+  document.getElementById('recogList').innerHTML='';
+  document.getElementById('importSummary').innerHTML='';
+  document.getElementById('importStats').textContent='未导入';
+  document.getElementById('pdfCount').textContent='0 份';
+  showToast('已清空','info');
 }
 
 // ======================================================================
 // 弹窗
 // ======================================================================
 function openEditModal(id) {
-  editingId = id;
-  for (var i = 0; i < records.length; i++) {
-    if (records[i].id === id) {
-      var r = records[i];
-      document.getElementById('modalTitle').textContent = '编辑开票信息';
-      document.getElementById('f_customsNo').value = r.customsNo;
-      document.getElementById('f_customsNo').disabled = true;
-      document.getElementById('f_invoiceNo').value = r.invoiceNo||'';
-      document.getElementById('f_buyerName').value = r.buyerName||'';
-      document.getElementById('f_invoiceDate').value = r.invoiceDate||'';
-      document.getElementById('f_amount').value = r.amount||'';
-      document.getElementById('editModal').classList.add('active');
-      return;
-    }
-  }
+  editingId=id;
+  for(var i=0;i<records.length;i++){ if(records[i].id===id){
+    var r=records[i];
+    document.getElementById('modalTitle').textContent='编辑开票信息';
+    document.getElementById('f_customsNo').value=r.customsNo; document.getElementById('f_customsNo').disabled=true;
+    document.getElementById('f_invoiceNo').value=r.invoiceNo||'';
+    document.getElementById('f_buyerName').value=r.buyerName||'';
+    document.getElementById('f_invoiceDate').value=r.invoiceDate||'';
+    document.getElementById('f_amount').value=r.amount||'';
+    document.getElementById('editModal').classList.add('active');
+    return;
+  }}
 }
 
 function openAddModal() {
-  editingId = null;
-  document.getElementById('modalTitle').textContent = '手动添加记录';
-  document.getElementById('f_customsNo').value = ''; document.getElementById('f_customsNo').disabled = false;
-  document.getElementById('f_invoiceNo').value = ''; document.getElementById('f_buyerName').value = '';
-  document.getElementById('f_invoiceDate').value = ''; document.getElementById('f_amount').value = '';
+  editingId=null;
+  document.getElementById('modalTitle').textContent='手动添加记录';
+  document.getElementById('f_customsNo').value=''; document.getElementById('f_customsNo').disabled=false;
+  document.getElementById('f_invoiceNo').value=''; document.getElementById('f_buyerName').value='';
+  document.getElementById('f_invoiceDate').value=''; document.getElementById('f_amount').value='';
   document.getElementById('editModal').classList.add('active');
 }
 
 function closeModal() {
   document.getElementById('editModal').classList.remove('active');
-  document.getElementById('f_customsNo').disabled = true; editingId = null;
+  document.getElementById('f_customsNo').disabled=true; editingId=null;
 }
 
 function saveModal() {
-  var cn = document.getElementById('f_customsNo').value.trim();
-  var inv = document.getElementById('f_invoiceNo').value.trim();
-  var buy = document.getElementById('f_buyerName').value.trim();
-  var date = document.getElementById('f_invoiceDate').value.trim();
-  var amt = document.getElementById('f_amount').value.trim();
+  var cn=document.getElementById('f_customsNo').value.trim();
+  var inv=document.getElementById('f_invoiceNo').value.trim();
+  var buy=document.getElementById('f_buyerName').value.trim();
+  var date=document.getElementById('f_invoiceDate').value.trim();
+  var amt=document.getElementById('f_amount').value.trim();
 
-  if (editingId) {
-    updateRecord(editingId, { invoiceNo: inv, buyerName: buy, invoiceDate: date, amount: amt });
-    renderAll(); closeModal(); showToast('记录已更新', 'success'); return;
-  }
-
-  var dm = cn.match(/(\d{18})/);
-  if (!dm) { showToast('请输入有效的18位海关编号', 'error'); return; }
-  var customsNo = dm[1];
-  for (var i = 0; i < records.length; i++) { if (records[i].customsNo === customsNo) { showToast('该海关编号已存在','warning'); return; } }
-  records.push({ id: generateId(), customsNo: customsNo, invoiceNo: inv, buyerName: buy, invoiceDate: date, amount: amt,
-    hasPdf: false, status: inv ? 'invoiced' : 'no_customs', source: 'manual',
-    createdAt: new Date().toISOString(), updatedAt: new Date().toISOString() });
-  saveData(); renderAll(); closeModal(); showToast('记录已添加', 'success');
+  if(editingId){ updateRecord(editingId,{invoiceNo:inv,buyerName:buy,invoiceDate:date,amount:amt}); renderAll(); closeModal(); showToast('已更新','success'); return; }
+  var dm=cn.match(/(\d{18})/);
+  if(!dm){ showToast('请输入有效的18位海关编号','error'); return; }
+  var c=dm[1];
+  for(var i=0;i<records.length;i++){ if(records[i].customsNo===c){ showToast('该海关编号已存在','warning'); return; } }
+  records.push({ id:generateId(), customsNo:c, invoiceNo:inv, buyerName:buy, invoiceDate:date, amount:amt, hasPdf:false, status:inv?'invoiced':'no_customs', source:'manual', createdAt:new Date().toISOString(), updatedAt:new Date().toISOString() });
+  saveData(); renderAll(); closeModal(); showToast('已添加','success');
 }
 
-document.getElementById('editModal').addEventListener('click', function(e) { if (e.target === this) closeModal(); });
+document.getElementById('editModal').addEventListener('click',function(e){ if(e.target===this) closeModal(); });
 
 // ======================================================================
 // 排序 + 渲染
 // ======================================================================
 function sortTable(field) {
-  if (sortField === field) sortDir = sortDir === 'asc' ? 'desc' : 'asc';
-  else { sortField = field; sortDir = 'asc'; }
-
-  var ths = document.querySelectorAll('th');
-  for (var i = 0; i < ths.length; i++) ths[i].classList.remove('sorted');
-  var fields = ['customsNo','invoiceNo','buyerName','invoiceDate','amount','status'];
-  var fi = fields.indexOf(field);
-  if (fi >= 0) {
-    ths[fi+1].classList.add('sorted');
-    var arr = ths[fi+1].querySelector('.sort-arrow');
-    if (arr) arr.textContent = sortDir === 'asc' ? '↓' : '↑';
-  }
-
-  records.sort(function(a,b) {
-    var va = (a[field]||'').toString().toLowerCase(), vb = (b[field]||'').toString().toLowerCase();
-    if (field==='customsNo'||field==='amount') return sortDir==='asc'?(parseFloat(va)||0)-(parseFloat(vb)||0):(parseFloat(vb)||0)-(parseFloat(va)||0);
-    return sortDir==='asc' ? va.localeCompare(vb) : vb.localeCompare(va);
+  if(sortField===field) sortDir=sortDir==='asc'?'desc':'asc';
+  else{ sortField=field; sortDir='asc'; }
+  var ths=document.querySelectorAll('th');
+  for(var i=0;i<ths.length;i++) ths[i].classList.remove('sorted');
+  var fields=['customsNo','invoiceNo','buyerName','invoiceDate','amount','status'];
+  var fi=fields.indexOf(field);
+  if(fi>=0){ ths[fi+1].classList.add('sorted'); var arr=ths[fi+1].querySelector('.sort-arrow'); if(arr) arr.textContent=sortDir==='asc'?'↓':'↑'; }
+  records.sort(function(a,b){
+    var va=(a[field]||'').toString().toLowerCase(), vb=(b[field]||'').toString().toLowerCase();
+    if(field==='customsNo'||field==='amount') return sortDir==='asc'?(parseFloat(va)||0)-(parseFloat(vb)||0):(parseFloat(vb)||0)-(parseFloat(va)||0);
+    return sortDir==='asc'?va.localeCompare(vb):vb.localeCompare(va);
   });
   renderTable();
 }
 
 function renderAll() {
   renderRecogList(); renderTable(); updateStats();
-  var hasData = records.length > 0;
-  document.getElementById('exportBtn').disabled = !hasData;
-  document.getElementById('backupBtn').disabled = !hasData;
+  var hasData=records.length>0;
+  document.getElementById('exportBtn').disabled=!hasData;
+  document.getElementById('backupBtn').disabled=!hasData;
 }
 
 function renderRecogList() {
-  var el = document.getElementById('recogList');
-  var pdfs = records.filter(function(r) { return r.source === 'pdf'; });
-  document.getElementById('pdfCount').textContent = pdfs.length + ' 份';
-  if (pdfs.length === 0) { el.innerHTML = '<span style="font-size:12px;color:var(--gray-400)">暂无识别的海关编号</span>'; return; }
-  el.innerHTML = pdfs.map(function(r) {
-    return '<span class="recog-tag"><span class="status-dot '+r.status+'"></span>'+escapeHtml(r.customsNo)+(r.invoiceNo?'<span style="color:var(--success);margin-left:4px">✓</span>':'')+'</span>';
-  }).join('');
+  var el=document.getElementById('recogList');
+  var pdfs=records.filter(function(r){ return r.source==='pdf'; });
+  document.getElementById('pdfCount').textContent=pdfs.length+' 份';
+  if(pdfs.length===0){ el.innerHTML='<span style="font-size:12px;color:var(--gray-400)">暂无识别的海关编号</span>'; return; }
+  el.innerHTML=pdfs.map(function(r){ return '<span class="recog-tag"><span class="status-dot '+r.status+'"></span>'+escHtml(r.customsNo)+(r.invoiceNo?'<span style="color:var(--success);margin-left:4px">✓</span>':'')+'</span>'; }).join('');
 }
 
 function renderTable() {
-  var tb = document.getElementById('tableBody');
-  if (records.length === 0) { tb.innerHTML = '<tr class="empty"><td colspan="9">暂无数据，请上传报关单 PDF 或导入 Excel</td></tr>'; return; }
-  tb.innerHTML = records.map(function(r,i) {
-    var sc = r.status, sl = r.status==='invoiced'?'已开票':(r.status==='no_customs'?'没有报关单':'待开票');
-    var srcC = r.source, srcL = r.source==='pdf'?'PDF':(r.source==='excel'?'Excel':'手动');
+  var tb=document.getElementById('tableBody');
+  if(records.length===0){ tb.innerHTML='<tr class="empty"><td colspan="9">暂无数据</td></tr>'; return; }
+  tb.innerHTML=records.map(function(r,i){
+    var sc=r.status, sl=r.status==='invoiced'?'已开票':(r.status==='no_customs'?'没有报关单':'待开票');
+    var sC=r.source, sL=r.source==='pdf'?'PDF':(r.source==='excel'?'Excel':'手动');
     return '<tr><td style="color:var(--gray-400);font-size:12px">'+(i+1)+'</td>'+
-      '<td><span class="customs-cell">'+escapeHtml(r.customsNo)+'</span></td>'+
-      '<td class="editable" onclick="openEditModal(\''+r.id+'\')">'+(r.invoiceNo?escapeHtml(r.invoiceNo):'<span style="color:var(--gray-400)">—</span>')+'<span class="edit-hint">✎</span></td>'+
-      '<td class="editable" onclick="openEditModal(\''+r.id+'\')">'+(r.buyerName?escapeHtml(r.buyerName):'<span style="color:var(--gray-400)">—</span>')+'<span class="edit-hint">✎</span></td>'+
-      '<td class="editable" onclick="openEditModal(\''+r.id+'\')">'+(r.invoiceDate?escapeHtml(r.invoiceDate):'<span style="color:var(--gray-400)">—</span>')+'<span class="edit-hint">✎</span></td>'+
-      '<td class="editable" onclick="openEditModal(\''+r.id+'\')" style="text-align:right">'+(r.amount?escapeHtml(r.amount):'<span style="color:var(--gray-400)">—</span>')+'<span class="edit-hint">✎</span></td>'+
+      '<td><span class="customs-cell">'+escHtml(r.customsNo)+'</span></td>'+
+      '<td class="editable" onclick="openEditModal(\''+r.id+'\')">'+(r.invoiceNo?escHtml(r.invoiceNo):'<span style="color:var(--gray-400)">—</span>')+'<span class="edit-hint">✎</span></td>'+
+      '<td class="editable" onclick="openEditModal(\''+r.id+'\')">'+(r.buyerName?escHtml(r.buyerName):'<span style="color:var(--gray-400)">—</span>')+'<span class="edit-hint">✎</span></td>'+
+      '<td class="editable" onclick="openEditModal(\''+r.id+'\')">'+(r.invoiceDate?escHtml(r.invoiceDate):'<span style="color:var(--gray-400)">—</span>')+'<span class="edit-hint">✎</span></td>'+
+      '<td class="editable" onclick="openEditModal(\''+r.id+'\')" style="text-align:right">'+(r.amount?escHtml(r.amount):'<span style="color:var(--gray-400)">—</span>')+'<span class="edit-hint">✎</span></td>'+
       '<td><span class="status-badge '+sc+'"><span class="dot"></span>'+sl+'</span></td>'+
-      '<td><span class="source-badge '+srcC+'">'+srcL+'</span></td>'+
+      '<td><span class="source-badge '+sC+'">'+sL+'</span></td>'+
       '<td><button class="btn btn-outline btn-sm" onclick="openEditModal(\''+r.id+'\')">编辑</button> <button class="btn btn-danger btn-sm" onclick="deleteRecord(\''+r.id+'\')">删除</button></td></tr>';
   }).join('');
 }
 
-function escapeHtml(s) { return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+function escHtml(s) { return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
 
 function updateStats() {
-  var total = records.length, pending = 0, invoiced = 0, noCus = 0;
-  for (var i = 0; i < records.length; i++) {
-    if (records[i].status === 'pending') pending++;
-    else if (records[i].status === 'invoiced') invoiced++;
-    else if (records[i].status === 'no_customs') noCus++;
+  var total=records.length, pending=0, invoiced=0, noCus=0;
+  for(var i=0;i<records.length;i++) {
+    if(records[i].status==='pending') pending++;
+    else if(records[i].status==='invoiced') invoiced++;
+    else if(records[i].status==='no_customs') noCus++;
   }
-  document.getElementById('totalCount').textContent = total;
-  var notice = [];
-  if (pending > 0) notice.push('待开票 ' + pending);
-  if (noCus > 0) notice.push('无报关单 ' + noCus);
-  document.getElementById('noticeLine').textContent = notice.length > 0 ? '(' + notice.join(' / ') + ' 条)' : '';
-  document.getElementById('statTotal').textContent = total;
-  document.getElementById('statPending').textContent = pending;
-  document.getElementById('statInvoiced').textContent = invoiced;
-  document.getElementById('statNoCustoms').textContent = noCus;
+  document.getElementById('totalCount').textContent=total;
+  var notice=[];
+  if(pending>0) notice.push('待开票 '+pending);
+  if(noCus>0) notice.push('无报关单 '+noCus);
+  document.getElementById('noticeLine').textContent=notice.length>0?'('+notice.join(' / ')+' 条)':'';
+  document.getElementById('statTotal').textContent=total;
+  document.getElementById('statPending').textContent=pending;
+  document.getElementById('statInvoiced').textContent=invoiced;
+  document.getElementById('statNoCustoms').textContent=noCus;
 }
 
 // ======================================================================
-// Toast 和加载状态
+// Toast 和状态
 // ======================================================================
 function showToast(msg, type) {
-  if (!type) type = 'info';
-  var c = document.getElementById('toastContainer');
-  var t = document.createElement('div');
-  t.className = 'toast ' + type;
-  var icons = {success:'✅',error:'❌',warning:'⚠️',info:'ℹ️'};
-  t.innerHTML = '<span>'+(icons[type]||'ℹ️')+'</span> '+escapeHtml(msg);
+  if(!type) type='info';
+  var c=document.getElementById('toastContainer');
+  var t=document.createElement('div');
+  t.className='toast '+type;
+  var icons={success:'✅',error:'❌',warning:'⚠️',info:'ℹ️'};
+  t.innerHTML='<span>'+(icons[type]||'ℹ️')+'</span> '+escHtml(msg);
   c.appendChild(t);
-  setTimeout(function(){ t.style.opacity='0'; t.style.transform='translateX(40px)'; t.style.transition='all .3s'; setTimeout(function(){t.remove()},300); }, 3500);
+  setTimeout(function(){ t.style.opacity='0'; t.style.transform='translateX(40px)'; t.style.transition='all .3s'; setTimeout(function(){ t.remove(); },300); }, 4000);
 }
 
-function showLoading(id) { document.getElementById(id).classList.add('active'); }
-function hideLoading(id) { document.getElementById(id).classList.remove('active'); }
+function showLoading(id){ document.getElementById(id).classList.add('active'); }
+function hideLoading(id){ document.getElementById(id).classList.remove('active'); }
 
 // ======================================================================
-// 数据持久化
+// 数据持久化 + 备份/恢复
 // ======================================================================
-
-// 所有历史 storage key（用于自动迁移旧版数据）
-var STORAGE_KEYS = [
-  STORAGE_KEY,            // 当前版本
-  'customs_invoice_data_v3',
-  'customs_invoice_data_v2',
-  'customs_invoice_data_v1',
-  'customs_invoice_data'
-];
-
 function loadData() {
   try {
-    // 先尝试当前键
     var raw = localStorage.getItem(STORAGE_KEY);
     if (raw) { records = JSON.parse(raw); return; }
-
-    // 尝试旧版键，迁移数据
     for (var ki = 1; ki < STORAGE_KEYS.length; ki++) {
       var oldKey = STORAGE_KEYS[ki];
       var oldRaw = localStorage.getItem(oldKey);
-      if (oldRaw) {
-        records = JSON.parse(oldRaw);
-        // 迁移到新键
-        localStorage.setItem(STORAGE_KEY, oldRaw);
-        // 清理旧键
-        try { localStorage.removeItem(oldKey); } catch(e) {}
-        return;
-      }
+      if (oldRaw) { records = JSON.parse(oldRaw); localStorage.setItem(STORAGE_KEY, oldRaw); try { localStorage.removeItem(oldKey); } catch(e) {} return; }
     }
   } catch(e) { records = []; }
 }
 
 function saveData() {
-  try {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(records));
-    document.getElementById('lastSaved').textContent = '数据已保存 · ' + new Date().toLocaleString('zh-CN');
-  } catch(e) { console.error('Save failed',e); }
+  try { localStorage.setItem(STORAGE_KEY, JSON.stringify(records)); document.getElementById('lastSaved').textContent = '数据已保存 · ' + new Date().toLocaleString('zh-CN'); } catch(e) { console.error('Save failed', e); }
 }
 
 function generateId() { return Date.now().toString(36) + Math.random().toString(36).substr(2,5); }
 
-// ===== 备份 & 恢复（JSON 导出/导入） =====
 function backupData() {
-  if (records.length === 0) {
-    showToast('没有数据可以备份', 'warning');
-    return;
-  }
-  var json = JSON.stringify({ version: STORAGE_KEY, exportedAt: new Date().toISOString(), data: records }, null, 2);
-  var blob = new Blob([json], { type: 'application/json' });
-  var a = document.createElement('a');
-  a.href = URL.createObjectURL(blob);
-  a.download = '报关单数据备份_' + new Date().toISOString().slice(0,10) + '.json';
-  document.body.appendChild(a); a.click(); document.body.removeChild(a);
-  URL.revokeObjectURL(a.href);
-  showToast('数据备份已下载', 'success');
+  if(records.length===0){ showToast('没有数据可以备份','warning'); return; }
+  var json=JSON.stringify({ version:STORAGE_KEY, exportedAt:new Date().toISOString(), data:records }, null, 2);
+  var blob=new Blob([json],{type:'application/json'});
+  var a=document.createElement('a'); a.href=URL.createObjectURL(blob); a.download='报关单数据备份_'+new Date().toISOString().slice(0,10)+'.json';
+  document.body.appendChild(a); a.click(); document.body.removeChild(a); URL.revokeObjectURL(a.href);
+  showToast('备份已下载','success');
 }
 
-// 点击恢复按钮 → 触发文件选择
-function onRestoreClick() {
-  document.getElementById('restoreInput').click();
-}
+function onRestoreClick() { document.getElementById('restoreInput').click(); }
 
-// 恢复数据（从 JSON 文件导入）
 function restoreDataFromFile(file) {
-  var reader = new FileReader();
-  reader.onload = function(e) {
+  var reader=new FileReader();
+  reader.onload=function(e){
     try {
-      var obj = JSON.parse(e.target.result);
-      var data = obj.data || obj;  // 支持带包装和不带包装的格式
-      if (!Array.isArray(data) || data.length === 0) {
-        showToast('备份文件格式无效或为空', 'error');
-        return;
-      }
-      if (!confirm('这将覆盖当前所有 ' + records.length + ' 条记录，替换为备份中的 ' + data.length + ' 条。确定继续吗？')) return;
-
-      records = data;
-      saveData();
-      renderAll();
-      showToast('已恢复 ' + records.length + ' 条数据', 'success');
-    } catch(err) {
-      showToast('恢复失败：备份文件格式错误', 'error');
-    }
+      var obj=JSON.parse(e.target.result);
+      var data=obj.data||obj;
+      if(!Array.isArray(data)||data.length===0){ showToast('备份文件无效','error'); return; }
+      if(!confirm('将覆盖当前 '+records.length+' 条记录，替换为备份的 '+data.length+' 条。确定吗？')) return;
+      records=data; saveData(); renderAll(); showToast('已恢复 '+records.length+' 条数据','success');
+    } catch(err) { showToast('恢复失败：文件格式错误','error'); }
   };
-  reader.onerror = function() { showToast('文件读取失败', 'error'); };
+  reader.onerror=function(){ showToast('文件读取失败','error'); };
   reader.readAsText(file);
 }
 
@@ -1205,81 +966,52 @@ function restoreDataFromFile(file) {
 document.getElementById('pdfInput').addEventListener('change', function(e) {
   var files = e.target.files;
   if (!files.length) return;
-
   showLoading('pdfLoading');
-  var ok = 0, fail = 0, total = files.length;
+  var ok=0, fail=0, total=files.length;
   var list = Array.prototype.slice.call(files);
-
   function next(idx) {
-    if (idx >= list.length) {
+    if(idx>=list.length){
       hideLoading('pdfLoading');
-      document.getElementById('pdfLoadingText').textContent = '正在识别海关编号...';
+      document.getElementById('pdfLoadingText').textContent='正在识别海关编号...';
       renderAll();
-      showToast('处理完成：成功 ' + ok + ' 份，失败 ' + fail + ' 份', fail===0?'success':'warning');
+      showToast('处理完成：成功 '+ok+' 份，失败 '+fail+' 份', fail===0?'success':'warning');
       return;
     }
-    var f = list[idx];
-    document.getElementById('pdfLoadingText').textContent = '正在识别海关编号... (' + (idx+1) + '/' + total + ')';
-
-    processPDF(f).then(function(cn) {
-      if (cn) { if (addRecord(cn, 'pdf')) ok++; else fail++; }
-      else { fail++; showToast('无法识别 ' + f.name + ' 中的海关编号', 'warning'); }
+    var f=list[idx];
+    document.getElementById('pdfLoadingText').textContent='正在识别海关编号... ('+(idx+1)+'/'+total+')';
+    processPDF(f).then(function(cn){
+      if(cn){ if(addRecord(cn,'pdf')) ok++; else fail++; }
+      else{ fail++; showToast('无法识别 '+f.name+' 中的海关编号','warning'); }
       next(idx+1);
-    }).catch(function(err) {
-      fail++; showToast('处理 ' + f.name + ' 失败：' + err.message, 'error');
-      next(idx+1);
-    });
+    }).catch(function(err){ fail++; showToast('处理 '+f.name+' 失败','error'); next(idx+1); });
   }
   next(0);
-  e.target.value = '';
+  e.target.value='';
 });
 
 document.getElementById('excelInput').addEventListener('change', function(e) {
-  var file = e.target.files[0];
-  if (!file) return;
-  var name = file.name.toLowerCase();
-
-  if (name.indexOf('.csv') >= 0) {
-    showLoading('excelLoading');
-    var r = new FileReader();
-    r.onload = function(e) { importCSV(e.target.result); hideLoading('excelLoading'); };
-    r.onerror = function() { showToast('CSV读取失败','error'); hideLoading('excelLoading'); };
-    r.readAsText(file);
-  } else {
-    showLoading('excelLoading');
-    importExcel(file);
-  }
-  e.target.value = '';
+  var file=e.target.files[0];
+  if(!file) return;
+  importExcel(file);
+  e.target.value='';
 });
 
-// 拖放上传
-var pz = document.getElementById('pdfZone');
-pz.addEventListener('dragover', function(e) { e.preventDefault(); pz.classList.add('dragover'); });
-pz.addEventListener('dragleave', function() { pz.classList.remove('dragover'); });
-pz.addEventListener('drop', function(e) {
-  e.preventDefault(); pz.classList.remove('dragover');
-  var files = e.dataTransfer.files;
-  if (files.length) { document.getElementById('pdfInput').files = files; document.getElementById('pdfInput').dispatchEvent(new Event('change')); }
-});
-
-var ez = document.getElementById('excelZone');
-ez.addEventListener('dragover', function(e) { e.preventDefault(); ez.classList.add('dragover'); });
-ez.addEventListener('dragleave', function() { ez.classList.remove('dragover'); });
-ez.addEventListener('drop', function(e) {
-  e.preventDefault(); ez.classList.remove('dragover');
-  var files = e.dataTransfer.files;
-  if (files.length) { document.getElementById('excelInput').files = files; document.getElementById('excelInput').dispatchEvent(new Event('change')); }
-});
-document.getElementById('excelInput').dispatchEvent(new Event('change')); }
-});
-
-// 恢复数据文件选择器
 document.getElementById('restoreInput').addEventListener('change', function(e) {
-  var file = e.target.files[0];
-  if (file) restoreDataFromFile(file);
-  e.target.value = '';
+  var file=e.target.files[0];
+  if(file) restoreDataFromFile(file);
+  e.target.value='';
 });
 
+// 拖放
+var pz=document.getElementById('pdfZone');
+pz.addEventListener('dragover',function(e){ e.preventDefault(); pz.classList.add('dragover'); });
+pz.addEventListener('dragleave',function(){ pz.classList.remove('dragover'); });
+pz.addEventListener('drop',function(e){ e.preventDefault(); pz.classList.remove('dragover'); var fs=e.dataTransfer.files; if(fs.length){ document.getElementById('pdfInput').files=fs; document.getElementById('pdfInput').dispatchEvent(new Event('change')); }});
+
+var ez=document.getElementById('excelZone');
+ez.addEventListener('dragover',function(e){ e.preventDefault(); ez.classList.add('dragover'); });
+ez.addEventListener('dragleave',function(){ ez.classList.remove('dragover'); });
+ez.addEventListener('drop',function(e){ e.preventDefault(); ez.classList.remove('dragover'); var fs=e.dataTransfer.files; if(fs.length){ document.getElementById('excelInput').files=fs; document.getElementById('excelInput').dispatchEvent(new Event('change')); }});
 
 // ======================================================================
 // 初始化
@@ -1287,13 +1019,15 @@ document.getElementById('restoreInput').addEventListener('change', function(e) {
 function init() {
   loadData();
   renderAll();
-  if (records.length > 0) {
-    document.getElementById('lastSaved').textContent = '数据已加载 · ' + new Date().toLocaleString('zh-CN');
-  }
+  if(records.length>0) document.getElementById('lastSaved').textContent='数据已加载 · '+new Date().toLocaleString('zh-CN');
+  // 异步加载 CDN 库
+  loadSheetJS(function(){});
+  loadPDFjs(function(){});
 }
 
-if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
+if(document.readyState==='loading') document.addEventListener('DOMContentLoaded', init);
 else init();
 </script>
+
 </body>
 </html>
